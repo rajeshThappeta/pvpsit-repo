@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+table{
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    margin-top: 200px;
+    font-size: 1.3rem;
+    color:var(--green-blue-color);
+    background-color: bisque;
+}
+
+table,td,th{
+    border:2px solid rgb(243, 243, 243);
+    border-collapse: collapse;
+    padding: 10px 15px;
+}
