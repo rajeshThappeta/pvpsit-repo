@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "username": "kiran",
+      "password": "abcd",
+      "email": "kiran@gmail.com",
+      "id": 1
+    },
+    {
+      "username": "bhanu",
+      "password": "abcd",
+      "email": "bhanu@gmail.com",
+      "id": 2
+    },
+    {
+      "username": "vikas",
+      "password": "abcd",
+      "email": "vikas@mail.com",
+      "id": 3
+    },
+    {
+      "username": "test",
+      "password": "test",
+      "email": "test1@mail.com",
+      "id": 4
+    },
+    {
+      "username": "test2",
+      "password": "test2",
+      "email": "test6@mail.com",
+      "id": 5
+    },
+    {
+      "username": "manasa",
+      "password": "avcds",
+      "email": "manasa@mail.com",
+      "id": 6
+    },
+    {
+      "username": "manoj",
+      "password": "asasd",
+      "email": "rajesh.t7982@gmail.com",
+      "id": 7
+    },
+    {
+      "username": "veeru",
+      "password": "zsdfsdf",
+      "email": "asas@asdasd",
+      "id": 8
+    }
+  ]
+}
