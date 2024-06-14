@@ -9,6 +9,12 @@ import "./App.css";
 import RegisteredUsers from "./components/registered-users/RegisteredUsers";
 import ManageTasks from "./components/tasks/ManageTasks";
 
+import UserDetails from "./components/user-details/UserDetails";
+import Tech from "./components/technologies/Tech";
+import Java from './components/java/Java';
+import Node from './components/node/Node';
+import Vue from './components/vue/Vue'
+
 function App({ children }) {
   //create browser router object
   const browserRouter = createBrowserRouter([
@@ -33,6 +39,11 @@ function App({ children }) {
           element:<Users />
         },
         {
+          path:'users/:userId',
+          element:<UserDetails />
+
+        },
+        {
           path:'registered-users',
           element:<RegisteredUsers />
         },
@@ -43,6 +54,24 @@ function App({ children }) {
         {
           path:'managetasks',
           element:<ManageTasks />
+        },
+        {
+          path:'technologies',
+          element:<Tech />,
+          children:[
+            {
+              path:'java',
+              element:<Java />
+            },
+            {
+              path:'node',
+              element:<Node />
+            },
+            {
+              path:'vue',
+              element:<Vue />
+            }
+          ]
         }
       ]
     }
@@ -54,3 +83,9 @@ function App({ children }) {
 }
 
 export default App;
+
+
+
+
+
+

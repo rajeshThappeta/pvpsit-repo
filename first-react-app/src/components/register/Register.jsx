@@ -20,7 +20,7 @@ function Register() {
 
     //if user created succeesfully
     if (res.status === 201) {
-      navigate("/registered-users");
+      navigate("/login");
     }
   }
 
