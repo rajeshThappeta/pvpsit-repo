@@ -8,7 +8,7 @@ import Parent from './components/parent/Parent'
 import "./App.css";
 import RegisteredUsers from "./components/registered-users/RegisteredUsers";
 import ManageTasks from "./components/tasks/ManageTasks";
-
+import UserDashboard from './components/user-dashboard/UserDashboard'
 import UserDetails from "./components/user-details/UserDetails";
 import Tech from "./components/technologies/Tech";
 import Java from './components/java/Java';
@@ -25,6 +25,10 @@ function App({ children }) {
         {
           path:'',
           element:<Home />
+        },
+        {
+          path:"user-dashboard",
+          element:<UserDashboard />
         },
         {
           path:'register',

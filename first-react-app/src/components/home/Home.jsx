@@ -1,10 +1,17 @@
-import img1 from '../../assets/2.jpeg'
+import img1 from "../../assets/2.jpeg";
+import { sampleContext } from "../../contexts/testContext";
+import { useContext } from "react";
 
 function Home() {
+  let {a,setA} = useContext(sampleContext);
+
+
+
   return (
-    <div className='text-center'>
+    <div className="text-center">
       <h1>Welcome to App</h1>
-      <img src={img1} width='500px' className='p-4 rounded-pill' alt="" />
+      <h2>{a}</h2>
+      <img src={img1} width="500px" className="p-4 rounded-pill" alt="" />
       <p className="lead">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ipsum
         tempora error? Unde hic consequatur tempora voluptate eum in numquam
