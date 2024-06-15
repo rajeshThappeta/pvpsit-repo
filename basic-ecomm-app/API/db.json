@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "username": "kiran",
+      "password": "kiran",
+      "email": "kiran@gmail.com",
+      "mobile": "9949825640",
+      "profileImage": "https://media.licdn.com/dms/image/D5603AQEhBYaldyR_rg/profile-displayphoto-shrink_400_400/0/1712338616576?e=2147483647&v=beta&t=ix47qT_GkG3tKVOEW5roH1hAqXh1yJQ-dliFTzUhK4Q",
+      "id": 1
+    }
+  ]
+}
