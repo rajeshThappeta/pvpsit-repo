@@ -3,10 +3,10 @@ import { useState } from "react";
 
 function UserLoginStore({ children }) {
   //login user state
-  let [currentUser, setCurrentUser] = useState({});
+  let [currentUser, setCurrentUser] = useState(null);
   let [userLoginStatus,setUserLoginStatus]=useState(false)
 
-  //make Login req
+  //user login
   async function loginUser(userCred) {
     let res = await fetch(
       `http://localhost:3000/users?username=${userCred.username}&password=${userCred.password}`
@@ -16,7 +16,7 @@ function UserLoginStore({ children }) {
     if (usersList.length === 0) {
       //invalid credentials
       console.log("invalid user")
-      setCurrentUser({})
+      setCurrentUser(null)
       setUserLoginStatus(false)
     } else {
       setCurrentUser(usersList[0]);
@@ -24,8 +24,15 @@ function UserLoginStore({ children }) {
     }
   }
 
+  //user logout
+  function logoutUser(){
+    //reset state
+    setCurrentUser({});
+    setUserLoginStatus(false);
+  }
+
   return (
-    <userLoginContext.Provider value={{ setUserLoginStatus, loginUser }}>
+    <userLoginContext.Provider value={{ loginUser,logoutUser,userLoginStatus }}>
       {children}
     </userLoginContext.Provider>
   );

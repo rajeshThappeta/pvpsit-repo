@@ -5,6 +5,7 @@ import Home from "./components/home/Home";
 import Register from "./components/register/Register";
 import Login from "./components/login/Login";
 import Aboutus from "./components/about/About";
+import UserProfile from './components/user-profile/UserProfile';
 import RoutingError from "./components/RoutingError";
 
 function App() {
@@ -30,6 +31,10 @@ function App() {
           path: "about",
           element: <Aboutus />,
         },
+        {
+          path:'user-profile',
+          element:<UserProfile />
+        }
       ],
     },
   ]);

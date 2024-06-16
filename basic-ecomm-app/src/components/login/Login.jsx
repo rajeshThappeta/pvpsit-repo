@@ -2,11 +2,14 @@ import "./Login.css";
 import { useForm } from "react-hook-form";
 import {useContext} from 'react';
 import { userLoginContext } from "../../contexts/userLoginContext";
+import {useNavigate} from 'react-router-dom'
+import { useEffect } from "react";
 
 function Login() {
 
-  let { setUserLoginStatus, loginUser}=useContext(userLoginContext)
-  const [userLoginErr, setUserLoginErr] = useState('')
+  let { loginUser,userLoginStatus}=useContext(userLoginContext)
+  //const [userLoginErr, setUserLoginErr] = useState('')
+  const navigate=useNavigate()
 
   let {
     register,
@@ -16,10 +19,18 @@ function Login() {
 
 
   //on user submit
-  async function onUserLogin(userCred) {
+   function onUserLogin(userCred) {
    
     loginUser(userCred)
+    console.log(userLoginStatus)
+   
   }
+
+  useEffect(()=>{
+    if(userLoginStatus===true){
+      navigate('/user-profile')
+    }
+  },[userLoginStatus])
 
   
   return (
@@ -29,9 +40,9 @@ function Login() {
       <div className="row ">
         <div className="col-11 col-sm-10 col-md-6 mx-auto">
           {/* other error message */}
-          {setUserLoginStatus===false &&userLoginErr.length!==0&& (
+          {/* {setUserLoginStatus===false &&userLoginErr.length!==0&& (
             <p className="fs-2 text-danger text-center">{err}</p>
-          )}
+          )} */}
           <form
             className="mx-auto mt-5 bg-light p-3"
             onSubmit={handleSubmit(onUserLogin)}
