@@ -10,6 +10,7 @@ import Products from './components/products/Products';
 import Cart from './components/cart/Cart'
 import RoutingError from "./components/RoutingError";
 import {Navigate} from 'react-router-dom'
+import EditUser from "./components/edit-user/EditUser";
 
 function App() {
   const browserRouter = createBrowserRouter([
@@ -35,6 +36,10 @@ function App() {
           element: <Aboutus />,
         },
         {
+          path:"edit-user",
+          element:<EditUser />
+        },
+        {
           path:'user-profile',
           element:<UserProfile />,
           children:[
@@ -46,6 +51,7 @@ function App() {
               path:'cart',
               element:<Cart />
             },
+           
             //navigate to Products component when page is empty
             {
               path:'',

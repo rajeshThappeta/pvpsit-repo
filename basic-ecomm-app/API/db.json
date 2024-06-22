@@ -1,15 +1,15 @@
 {
   "users": [
     {
-      "username": "kiran",
+      "username": "kiranbabu",
       "password": "kiran",
-      "email": "kiran@gmail.com",
-      "mobile": "9949825640",
+      "email": "kiranbabu@gmail.com",
+      "mobile": "9949825641",
       "profileImage": "https://media.licdn.com/dms/image/D5603AQEhBYaldyR_rg/profile-displayphoto-shrink_400_400/0/1712338616576?e=2147483647&v=beta&t=ix47qT_GkG3tKVOEW5roH1hAqXh1yJQ-dliFTzUhK4Q",
       "id": 1
     },
     {
-      "username": "bhanu",
+      "username": "bhanukumar",
       "password": "bhanu",
       "email": "bhanu@gmail.com",
       "mobile": "9949825640",
@@ -150,18 +150,6 @@
   ],
   "user-cart": [
     {
-      "id": 1,
-      "title": "iPhone 9",
-      "description": "An apple mobile which is nothing like apple",
-      "price": 549,
-      "discountPercentage": 12.96,
-      "rating": 4.69,
-      "stock": 94,
-      "brand": "Apple",
-      "category": "smartphones",
-      "username": "kiran"
-    },
-    {
       "id": 3,
       "title": "Samsung Universe 9",
       "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
@@ -171,28 +159,6 @@
       "stock": 36,
       "brand": "Samsung",
       "username": "bhanu"
-    },
-    {
-      "id": 6,
-      "title": "MacBook Pro",
-      "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
-      "price": 1749,
-      "discountPercentage": 11.02,
-      "rating": 4.57,
-      "stock": 83,
-      "brand": "Apple",
-      "username": "kiran"
-    },
-    {
-      "id": 11,
-      "title": "perfume Oil",
-      "description": "Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil",
-      "price": 13,
-      "discountPercentage": 8.4,
-      "rating": 4.26,
-      "stock": 65,
-      "brand": "Impression of Acqua Di Gio",
-      "username": "kiran"
     },
     {
       "id": 5,
