@@ -1,0 +1,18 @@
+table{
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+    
+}
+
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px 0px;
+}
+
+/* tr:hover{
+    background-color: black;
+    color:white;
+} */
