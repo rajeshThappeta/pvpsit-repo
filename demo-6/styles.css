@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    color:orangered;
+}
+
+body{
+    height: 1000px;
+}
+.parent{
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    border: 5px solid darkgoldenrod;
+    position: relative;
+    margin-top: 200px;
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+}
+
+.child1{
+    background-color: red;
+    position: absolute;
+    left: -50px;
+    top:-50px
+    
+   
+    
+}
+.child2{
+    background-color: green;
+    position: fixed;
+}
+.child3{
+    background-color: blue;
+    position: sticky;
+    top:50px;
+}
+
+
+
+/* position - static,relative,absolute,fixed,sticky */
+/* top, bottom,left & right */

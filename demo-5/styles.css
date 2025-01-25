@@ -56,6 +56,17 @@
 
 
 /* main content styles */
+
+.shirt-card{
+    position: relative;
+}
+
+.shirt-card .new-logo{
+    position: absolute;
+    top:-30px;
+    right:-30px;
+}
+
 .shirt-card .shirt-img{
     width: 200px;    
 }
@@ -71,4 +82,10 @@
     padding: 20px;
     margin-top: 100px;
     border-radius: 10px;
+}
+
+
+.wts-logo{
+    position: fixed;
+    bottom: 0;
 }

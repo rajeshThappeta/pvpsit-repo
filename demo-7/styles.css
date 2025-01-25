@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+form {
+    width: 500px;
+    margin: auto;
+    font-size: 1.3rem;
+    background-color: gainsboro;
+    padding: 20px;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='number'],
+input[type='email'] ,
+input[type='date'],
+textarea{
+    width: 100%;
+    padding: 7px;
+}
+
+.gap {
+    margin-top: 10px;
+}
+
+
+button{
+    border: none;
+    background-color: goldenrod;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color:white;
+}

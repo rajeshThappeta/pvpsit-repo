@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms demo</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <!-- user registration form -->
+    <form>
+        <!-- username -->
+        <div class="gap">
+            <label for="username">Username</label>
+            <input type="text" id="username" autocomplete="off" placeholder="Plz enter username" required minlength="4"
+                maxlength="6">
+        </div>
+        <!-- password -->
+        <div class="gap">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="enter password">
+        </div>
+
+        <!-- salary -->
+        <div class="gap">
+            <label for="salary">Salary</label>
+            <input type="number" id="salary">
+        </div>
+
+        <!-- dob -->
+        <div class="gap">
+            <label for="dob">Date of birth</label>
+            <input type="date" id="dob">
+        </div>
+
+
+
+        <!-- email -->
+        <div class="gap">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+        </div>
+
+        <!-- profile -->
+        <div class="gap">
+            <label for="profile">Profile</label>
+            <input type="file" id="profile">
+        </div>
+
+
+        <!-- skills -->
+        <div class="gap">
+            <label>Choose skills</label>
+            <!-- skill-1 -->
+            <div>
+                <input type="checkbox" name="js" id="js">
+                <label for="js">JavaScript</label>
+            </div>
+            <!-- skill-2 -->
+            <div>
+                <input type="checkbox" name="java" id="java">
+                <label for="java">Java</label>
+            </div>
+            <!-- skill-3 -->
+            <div>
+                <input type="checkbox" name="react" id="react">
+                <label for="react">React</label>
+            </div>
+        </div>
+
+        <!-- gender -->
+        <div class="gap">
+            <label>Choose gender</label>
+            <!-- gender-1 -->
+            <div>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+            </div>
+            <!-- gnder-2 -->
+            <div>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+            </div>
+
+
+
+        </div>
+
+
+        <!-- state -->
+        <div class="gap">
+            <label for="state">Select state</label>
+            <select name="state" id="state">
+                <option value="ap">Andhra pradesh</option>
+                <option value="telangana">Telangana</option>
+                <option value="kerala">Kerala</option>
+            </select>
+        </div>
+
+        <!-- feedback -->
+        <div class="gap">
+            <label for="feedback">Feedback</label>
+            <textarea name="feedback" id="feedback" cols="50" rows="5"></textarea>
+        </div>
+
+
+
+        <!-- submit button -->
+        <button type="submit">Login</button>
+
+    </form>
+
+</body>
+
+</html>
