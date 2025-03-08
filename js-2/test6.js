@@ -1,3 +1,6 @@
+
+let a=10;
+
 //basic operations on an object
 let student={
     sno:100,
