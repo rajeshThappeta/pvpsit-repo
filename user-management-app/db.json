@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": "f130",
+      "name": "ravi",
+      "email": "ravi@mail.com",
+      "dob": "2025-07-03"
+    },
+    {
+      "id": "542b",
+      "name": "bhanu",
+      "email": "bhanu@gmail.com",
+      "dob": "2025-07-26"
+    }
+  ]
+}
