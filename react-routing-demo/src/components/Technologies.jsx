@@ -1,6 +1,12 @@
 import { Link, Outlet } from 'react-router'
 
+
 function Technologies() {
+
+
+
+
+
   return (
     <div>
       <h1 className='text-center'>Technologies</h1>
@@ -16,6 +22,8 @@ function Technologies() {
           <Link to='vue' className='nav-link'>Vue</Link>
         </li>
       </ul>
+
+
       <div>
         {/* placeholder for nested routing */}
         <Outlet />

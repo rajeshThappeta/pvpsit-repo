@@ -1,13 +1,19 @@
-import { createBrowserRouter, RouterProvider,Navigate } from 'react-router'
+import { createBrowserRouter, RouterProvider, Navigate } from 'react-router'
 import './App.css'
 import RootLayout from './components/RootLayout'
 import Home from './components/Home'
-import Register from './components/Registrer'
-import Login from './components/Login'
+//import Register from './components/Registrer'
+//import Login from './components/Login'
 import Technologies from './components/Technologies'
 import Java from './components/Java'
 import Node from './components/Node'
 import Vue from './components/Vue'
+
+
+//Dynamic loading of Register component
+import { lazy, Suspense } from 'react';
+const Register = lazy(() => import('./components/Registrer'));
+const Login = lazy(() => import('./components/Login'));
 
 function App() {
 
@@ -23,31 +29,31 @@ function App() {
         },
         {
           path: "register",
-          element: <Register />
+          element: <Suspense fallback={<p>Loading...</p>}><Register /></Suspense>
         },
         {
           path: "login",
-          element: <Login />
+          element: <Suspense fallback={<p>Loading...</p>}><Login /></Suspense>
         },
         {
           path: "technologies",
           element: <Technologies />,
-          children:[
+          children: [
             {
-              path:"java",
-              element:<Java />
+              path: "java",
+              element: <Java />
             },
             {
-              path:"node",
-              element:<Node />
+              path: "node",
+              element: <Node />
             },
             {
-              path:"vue",
-              element:<Vue />
+              path: "vue",
+              element: <Vue />
             },
             {
-              path:"",
-              element:<Navigate to='node' />
+              path: "",
+              element: <Navigate to='node' />
 
             }
           ]
